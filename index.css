@@ -1,0 +1,83 @@
+html,
+body {
+  margin: 0%;
+}
+header {
+  /* header 높너비 지정 */
+  width: 100vw;
+  height: 60px;
+}
+nav {
+  /* 중앙정렬 */
+  margin: auto;
+  /* 최대 넓이, 블록 크기 지정 */
+  max-width: 935px;
+  height: 100%;
+  padding: 0 20px 0 20px;
+  /* display 처리 */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#navSearchBar {
+  /* 중앙정렬 */
+  margin: auto;
+  /* 배경색 및 블록 모형 지정 */
+  background-color: #ebedf0;
+  border-radius: 8px;
+  /* 블록 크기 지정 */
+  min-width: 125px;
+  width: 268px;
+  height: 36px;
+  /* display 처리 */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+#navSearchField {
+  /* 블록 크기 지정 */
+  padding: 3px 16px 3px 16px;
+  width: 236px;
+  height: 30px;
+  /* input 스타일 변경 */
+  border: 0px solid rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  /* position 설정 */
+  position: relative;
+}
+#navSearchButton {
+  /* position 설정 */
+  position: absolute;
+  /* display 설정 */
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  /* 블록 크기 지정 */
+  width: 236px;
+  height: 36px;
+  padding: 0px 16px 0px 16px;
+}
+.searchbar-button {
+  /* 블록 크기 지정 */
+  width: 236px;
+  height: 25px;
+  margin: auto;
+  /* display 설정 */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.searchbar-icon {
+  /* 블록 크기 지정 */
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+}
+.searchbar-text {
+  /* 블록 크기 지정 */
+  width: 32px;
+  height: 25px;
+  /* 폰트 스타일 지정 */
+  font-size: 100%;
+  color: #bec3c9;
+}
