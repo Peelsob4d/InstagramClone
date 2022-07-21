@@ -1,6 +1,8 @@
 html,
 body {
   margin: 0%;
+  /* background style */
+  background-color: rgb(250, 250, 250);
 }
 header {
   /* header 높너비 지정 */
@@ -13,6 +15,8 @@ header {
   border-bottom: 1px solid rgb(219, 219, 219);
   /* z-index */
   z-index: 10;
+  /* background style */
+  background-color: white;
 }
 nav {
   /* 중앙정렬 */
@@ -25,8 +29,6 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* background style */
-  background-color: white;
 }
 .nav-div {
   /* flex ratio */
@@ -224,8 +226,6 @@ main {
   align-content: center;
   /* set margin */
   margin-top: 60px;
-  /* background style */
-  background-color: rgb(250, 250, 250);
 }
 .flex-layout-center {
   display: flex;
@@ -281,4 +281,106 @@ aside {
   margin-bottom: 30px;
   /* z-index */
   z-index: 1;
+}
+.my-profile {
+  /* block sizing */
+  width: 319px;
+  height: 66px;
+  /* set margin */
+  margin-top: 16px;
+  margin-bottom: 10px;
+  /* display */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.my-profile-img {
+  /* block sizing */
+  width: 50px;
+  height: 56px;
+  /* set margin */
+  margin-right: 12px;
+}
+.my-profile-img > img {
+  /* block sizing */
+  width: 56px;
+  height: 56px;
+  /* border-radius set */
+  border-radius: 28px;
+}
+.my-profile-info {
+  /* block sizing */
+  width: 225px;
+  height: 30px;
+}
+.my-profile-info-id {
+  /* block sizing */
+  height: 11px;
+}
+.my-profile-info-my-id {
+  /* block sizing */
+  height: 18px;
+}
+.my-profile-info-my-id-a {
+  /* block sizing */
+  height: 18px;
+  /* display */
+  display: inline-block;
+  /* font style */
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(38, 38, 38);
+}
+.my-profile-info-name {
+  /* block sizing */
+  margin-top: 8px;
+  height: 11px;
+}
+.my-profile-info-my-name {
+  /* block sizing */
+  height: 18px;
+  /* font style */
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(142, 142, 142);
+}
+.info-text {
+  /* block sizing */
+  height: 18px;
+  margin-left: 12px;
+}
+.my-profile-changeacout {
+  /* font style */
+  font-size: 12px;
+  line-height: 16px;
+  margin: -2px 0 -3px;
+}
+.my-profile-changeacout > a {
+  /* display */
+  display: inline-block;
+  /* font style */
+  color: rgb(0, 149, 246);
+  text-decoration: none;
+  font-weight: 600;
+}
+.suggest-list {
+  /* block sizing */
+  width: 351px;
+  height: 279px;
+  margin-bottom: 12px;
+}
+.suggest-list-text {
+  /* block sizing */
+  width: 319px;
+  height: 11px;
+  padding: 4px 0 4px 0;
+  /* display */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
 }
