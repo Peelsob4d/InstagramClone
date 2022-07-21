@@ -11,6 +11,8 @@ header {
   top: 0;
   /* border style */
   border-bottom: 1px solid rgb(219, 219, 219);
+  /* z-index */
+  z-index: 10;
 }
 nav {
   /* 중앙정렬 */
@@ -23,6 +25,8 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /* background style */
+  background-color: white;
 }
 .nav-div {
   /* flex ratio */
@@ -202,4 +206,79 @@ nav {
   /* block sizing */
   width: 24px;
   height: 24px;
+}
+/* 메인 섹션 스타일링(미디어쿼리 처리 => 1000px) */
+@media screen and (max-width: 1000px) {
+  aside {
+    /* disable display when vw less than 1000px */
+    display: none;
+  }
+}
+main {
+  /* block sizing */
+  width: calc(100vw - 32px);
+  /* set display */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  /* set margin */
+  margin-top: 60px;
+  /* background style */
+  background-color: rgb(250, 250, 250);
+}
+.flex-layout-center {
+  display: flex;
+}
+#articleList {
+  /* block sizing */
+  width: 470px;
+  height: 800px;
+  /* set margin */
+  margin-top: 26px;
+  margin-right: 32px;
+}
+.section-div {
+  /* border style */
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 8px;
+  /* background style */
+  background-color: white;
+}
+.section-stories {
+  /* block sizing */
+  width: 468px;
+  height: 85px;
+}
+.section-articles {
+  /* set margin */
+  margin-top: 16px;
+}
+.article-div {
+  /* set margin */
+  margin-bottom: 12px;
+}
+.section-post {
+  /* block sizing */
+  width: 470px;
+  height: 716px;
+}
+.section-suggest {
+  /* block sizing */
+  width: 470px;
+  height: 246px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+aside {
+  /* position */
+  position: sticky;
+  /* block sizing */
+  width: 319px;
+  height: 937px;
+  /* set margin */
+  margin-top: 16px;
+  margin-bottom: 30px;
+  /* z-index */
+  z-index: 1;
 }
