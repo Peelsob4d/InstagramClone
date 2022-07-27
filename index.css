@@ -208,6 +208,7 @@ nav {
   /* block sizing */
   width: 24px;
   height: 24px;
+  border-radius: 24px;
 }
 /* 메인 섹션 스타일링(미디어쿼리 처리 => 1000px) */
 @media screen and (max-width: 1000px) {
@@ -230,6 +231,8 @@ main {
 .flex-layout-center {
   display: flex;
 }
+
+/* Article styles */
 #articleList {
   /* block sizing */
   width: 470px;
@@ -269,7 +272,24 @@ main {
   height: 246px;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-top: 16px;
 }
+.section-post-album-window {
+  overflow: hidden;
+  height: 470px;
+}
+.section-post-album {
+  height: 470px;
+  display: flex;
+  transition: all 0.15s ease-out;
+}
+.section-post-album-image {
+  width: 470px;
+  height: 470px;
+  object-fit: cover;
+}
+
+/* Aside styles */
 aside {
   /* position */
   position: sticky;
@@ -384,3 +404,5 @@ aside {
   align-content: center;
   justify-content: space-between;
 }
+
+/* article */

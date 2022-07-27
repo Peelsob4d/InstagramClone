@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "user_name": "dhekgus_1122",
+      "user_banner": "asset/myprofile.jpg",
+      "user_link": "/",
+      "location": "국립서울현충원",
+      "images": [
+        "https://cdn.pixabay.com/photo/2017/04/07/15/48/road-to-nowhere-2211240_960_720.jpg",
+        "https://yt3.ggpht.com/ytc/AKedOLRn3LfaJsKCUDpfzlBA3fIm_Cd5UwSSR-GJOe2-=s900-c-k-c0x00ffffff-no-rj",
+        "https://grds.com/web/upload/NNEditor/20201023/roll2_000040.jpg"
+      ],
+      "likes": {
+        "liked_users": ["dhekgus_1122"],
+        "liked_count": 1
+      },
+      "contents": "아무거나집어넣었음ㅅㄱㄹ",
+      "comments": [
+        {
+          "user_name": "dhekgus_1122",
+          "user_link": "/",
+          "comment": "일단 댓글"
+        }
+      ],
+      "uploaded_date": "2022-07-26"
+    }
+  ]
+}
