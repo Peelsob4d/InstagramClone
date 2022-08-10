@@ -261,11 +261,7 @@ main {
   /* set margin */
   margin-bottom: 12px;
 }
-.section-post {
-  /* block sizing */
-  width: 470px;
-  height: 716px;
-}
+
 .section-suggest {
   /* block sizing */
   width: 470px;
@@ -274,6 +270,52 @@ main {
   padding-bottom: 20px;
   margin-top: 16px;
 }
+.section-post {
+  /* block sizing */
+  width: 470px;
+  min-height: 716px;
+}
+.section-post-name {
+  display: flex;
+  width: calc(100% -24px);
+  height: 59px;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.section-post-userimg {
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  border-radius: 32px;
+}
+.section-post-userimg > img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+.section-post-info {
+  width: 364px;
+  height: 42px;
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.post-info-name > a {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(38, 38, 38);
+}
+.post-info-location {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgb(38, 38, 38);
+}
+.section-post-image {
+  position: relative;
+}
 .section-post-album-window {
   overflow: hidden;
   height: 470px;
@@ -281,12 +323,22 @@ main {
 .section-post-album {
   height: 470px;
   display: flex;
-  transition: all 0.15s ease-out;
+  transition: all 0.25s ease;
 }
 .section-post-album-image {
   width: 470px;
   height: 470px;
   object-fit: cover;
+}
+.section-post-album-button-box {
+  position: absolute;
+  top: 0;
+  width: 470px;
+  height: 470px;
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Aside styles */

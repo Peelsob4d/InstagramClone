@@ -7,7 +7,7 @@ const createPost = (data) => {
         <div class="section-post-userimg">
           <img src="${data.user_banner}" alt="banner">
         </div>
-        <div class="section-post-info>
+        <div class="section-post-info">
           <div class="post-info-name">
             <a href="${data.user_link}">${data.user_name}</a>
           </div>
@@ -19,8 +19,7 @@ const createPost = (data) => {
       <div class="section-post-image"></div>
       <div class="section-post-menu">
         <div class="post-menu-image-list"></div>
-        <div class="post-menu-icons">
-        </div>
+        <div class="post-menu-icons"></div>
         <div class="post-menu-inside">
           <div class="inside-likes"></div>
           <div class="inside-post">
