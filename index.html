@@ -8,6 +8,25 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <div id="createPostBox">
+      <div id="createPostContainer">
+        <form action="" id="createPostForm">
+          <div>
+            <label for="file"><strong>파일을 선택하세요</strong></label>
+            <input type="file" multiple name="IMG_FILE" id="" />
+          </div>
+          <div>
+            <label for="location">위치</label>
+            <input type="text" name="location" id="" />
+          </div>
+          <div>
+            <label for="content">내용</label>
+            <input type="text" name="content" />
+          </div>
+          <button type="submit">제출하기</button>
+        </form>
+      </div>
+    </div>
     <header>
       <nav>
         <!-- navLogo -->
@@ -190,9 +209,6 @@
     <main>
       <div class="flex-layout-center">
         <section id="articleList">
-          <!-- stories and suggestion -->
-          <div class="section-stories section-div"></div>
-          <div class="section-suggest section-div article-div"></div>
           <!-- posts -->
           <div class="section-articles">
             <!-- <article class="section-post section-div article-div">
@@ -206,6 +222,9 @@
               </div>
             </article> -->
           </div>
+          <!-- stories and suggestion -->
+          <div class="section-stories section-div"></div>
+          <div class="section-suggest section-div article-div"></div>
         </section>
         <aside>
           <div class="my-profile">
@@ -255,6 +274,6 @@
         </aside>
       </div>
     </main>
-    <script src="posts.js"></script>
+    <script type="module" src="scripts/posts.js"></script>
   </body>
 </html>

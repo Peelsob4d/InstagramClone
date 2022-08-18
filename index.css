@@ -273,7 +273,6 @@ main {
 .section-post {
   /* block sizing */
   width: 470px;
-  min-height: 716px;
 }
 .section-post-name {
   display: flex;
@@ -339,6 +338,115 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.section-post-album-button {
+  width: 46px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  border: 0;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+.section-post-album-button-prev {
+  display: none;
+  background-repeat: no-repeat;
+  background-position: -130px -98px;
+  height: 30px;
+  width: 30px;
+  background-image: url('https://static.cdninstagram.com/rsrc.php/v3/y5/r/TJztmXpWTmS.png');
+}
+.section-post-album-button-next {
+  background-repeat: no-repeat;
+  background-position: -162px -98px;
+  height: 30px;
+  width: 30px;
+  background-image: url('https://static.cdninstagram.com/rsrc.php/v3/y5/r/TJztmXpWTmS.png');
+}
+.section-post-album-nav {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 470px;
+  margin: 15px 0px 15px 0px;
+}
+.image-nav {
+  width: 6px;
+  height: 6px;
+  background-color: rgb(168, 168, 168);
+  border-radius: 6px;
+  margin-right: 4px;
+}
+.image-nav-blue {
+  width: 6px;
+  height: 6px;
+  background-color: rgb(0, 149, 246);
+  border-radius: 6px;
+  margin-right: 4px;
+}
+.section-post-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.section-post-navbar {
+  width: 452px;
+  height: 40px;
+  padding-bottom: 6px;
+  margin-top: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+.post-menu-icons {
+  width: 120px;
+  display: flex;
+}
+.post-menu-icon {
+  padding: 8px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+.post-menu-icon > button {
+  width: 24px;
+  height: 24px;
+  border: 0;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+}
+.inside-likes {
+  height: 18px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+.inside-post {
+  width: 430px;
+}
+.inside-post-link {
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+.inside-post-content {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+.post-date {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  width: 430px;
+  color: rgb(142, 142, 142);
+  margin-bottom: 8px;
 }
 
 /* Aside styles */
@@ -458,3 +566,29 @@ aside {
 }
 
 /* article */
+
+/* postForm */
+#createPostBox {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  align-items: center;
+  z-index: 30;
+}
+#createPostContainer {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 140px;
+  background-color: white;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 8px;
+  margin: auto;
+  padding: 10px;
+}
+#createPostForm > div {
+  margin-bottom: 8px;
+}
